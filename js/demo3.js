@@ -178,7 +178,7 @@
     
     let uncoverArr = [];
 
-    imagesLoaded(document.querySelectorAll('.slide__img'), {background: true}, () => {
+    imagesLoaded(document.querySelectorAll('.scroll-img'), {background: true}, () => {
         document.body.classList.remove('loading');
 
         items.forEach((item, pos) => {
