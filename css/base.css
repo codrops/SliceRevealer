@@ -46,16 +46,6 @@ body {
 	--color-info: #333;
 }
 
-/* Fade effect */
-.js body {
-	opacity: 0;
-	transition: opacity 0.3s;
-}
-
-.js body.render {
-	opacity: 1;
-}
-
 /* Page Loader */
 .js .loading::before {
 	content: '';
@@ -185,6 +175,7 @@ main {
 	align-self: start;
 	grid-area: header;
 	justify-self: start;
+	pointer-events: auto;
 }
 
 .codrops-header__title {
@@ -252,6 +243,7 @@ a.demo--current {
 	width: 100%;
 	height: 100vh;
 	margin: auto;
+	pointer-events: none;
 }
 
 .slide {
@@ -261,7 +253,6 @@ a.demo--current {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	pointer-events: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -269,7 +260,6 @@ a.demo--current {
 
 .slide--current {
 	opacity: 1;
-	pointer-events: auto;
 }
 
 .slide__img {
